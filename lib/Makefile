@@ -59,7 +59,7 @@ default: lib-release
 
 CPPFLAGS_DYNLIB  += -DZSTD_MULTITHREAD # dynamic library build defaults to multi-threaded
 LDFLAGS_DYNLIB   += -pthread
-CPPFLAGS_STATLIB +=                    # static library build defaults to single-threaded
+CPPFLAGS_STATLIB +=  -fPIC # static library build defaults to single-threaded
 
 
 ifeq ($(findstring GCC,$(CCVER)),GCC)

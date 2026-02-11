@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="datagen/datagen.vcxproj" />
+  <Project Path="fullbench-dll/fullbench-dll.vcxproj">
+    <BuildDependency Project="libzstd-dll/libzstd-dll.vcxproj" />
+  </Project>
+  <Project Path="fullbench/fullbench.vcxproj" />
+  <Project Path="fuzzer/fuzzer.vcxproj" />
+  <Project Path="libzstd-dll/libzstd-dll.vcxproj" />
+  <Project Path="libzstd/libzstd.vcxproj" />
+  <Project Path="zstd/zstd.vcxproj" />
+</Solution>
